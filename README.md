@@ -60,7 +60,7 @@ entry, its filter counts, its sitemap row and its Hub directory record with no o
 
 | Export | Count | Consumed by |
 |---|---|---|
-| `portfolio` | 15 | Homepage, portfolio index + details, mega-menu, Hub directory/companies |
+| `portfolio` | 15 (13 verticals) | Homepage, portfolio index + details, mega-menu, Hub directory/companies |
 | `team` | 17 | People page, Hub directory |
 | `offices` | 5 | Footer clocks, people page, Hub header, overlap band |
 | `forum` | 8 | Hub leadership forum |

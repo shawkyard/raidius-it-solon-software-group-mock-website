@@ -19,6 +19,11 @@ const shortLoc = c => c.hqCity ? `${c.hqCity}, ${c.hqRegion || c.hqCountry}` : (
 
 const REPO_BASE = '/raidius-it-solon-software-group-mock-website/';
 
+const WORDS = ['zero','one','two','three','four','five','six','seven','eight','nine','ten',
+  'eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
+const word = n => WORDS[n] || String(n);
+const Word = n => { const w = word(n); return w.charAt(0).toUpperCase() + w.slice(1); };
+
 /* SEO helpers — titles <= 60 chars, descriptions 140-160, all unique. */
 function fitTitle(base, suffix) {
   const full = suffix ? `${base} ${suffix}` : base;
@@ -285,7 +290,7 @@ function home() {
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">The portfolio</span>
-      <h2>Fifteen companies. Twelve industries. One owner who is not going anywhere.</h2>
+      <h2>${Word(D.portfolio.length)} companies. ${Word(verticals.length)} industries. One owner who is not going anywhere.</h2>
     </div>
     <div class="grid g3">${featured.map(c => coCard(c, '')).join('\n      ')}</div>
     <div style="margin-top:34px"><a class="arrow-link" href="portfolio.html">View all ${D.portfolio.length} companies</a></div>
@@ -331,7 +336,7 @@ function home() {
 
   return layout({
     title: 'Solen Software Group — Permanent Capital Software',
-    desc: 'Solen is a permanent home for founder-built, mission-critical software businesses. Fifteen companies, twelve verticals, no exit timeline and no companies sold.',
+    desc: fitDesc(`Solen is a permanent home for founder-built, mission-critical software businesses. ${Word(D.portfolio.length)} companies, ${word(verticals.length)} verticals, no exit timeline and no companies sold.`),
     path: '', nav: 'home', body,
     jsonld: {
       '@context': 'https://schema.org', '@type': 'Organization', name: 'Solen Software Group',
@@ -555,7 +560,7 @@ function portfolioIndex() {
 <section class="hero" style="padding-bottom:40px">
   <div class="wrap">
     <span class="eyebrow accent">The portfolio</span>
-    <h1>Fifteen companies. Twelve industries. One owner who is not going anywhere.</h1>
+    <h1>${Word(D.portfolio.length)} companies. ${Word(verticals.length)} industries. One owner who is not going anywhere.</h1>
     <p class="lede">Each company keeps its brand, its leadership and its independence. What changes is what sits behind it.</p>
     <div class="hero-strip">
       <span><b>${D.portfolio.length}</b> companies</span>
@@ -608,7 +613,7 @@ function portfolioIndex() {
 </section>`;
   return layout({
     title: 'Portfolio — 15 Vertical Software Companies | Solen',
-    desc: 'Solen holds fifteen mission-critical software companies across twelve industries, from agricultural ERP to public health records to studio content entitlements.',
+    desc: fitDesc(`Solen holds ${word(D.portfolio.length)} mission-critical software companies across ${word(verticals.length)} industries, from agricultural ERP to public health records to studio content entitlements.`),
     path: 'portfolio.html', nav: 'portfolio', body
   });
 }
@@ -816,7 +821,7 @@ ${byOffice.map(g => `
 </section>`;
   return layout({
     title: 'People — The Solen Software Group Team',
-    desc: fitDesc('Seventeen people across Salt Lake City, Lisbon, New York, Toronto and São Paulo, with backgrounds at Constellation Software, Valsoft and Roper.'),
+    desc: fitDesc(`${Word(D.team.length)} people across Salt Lake City, Lisbon, New York, Toronto and São Paulo, with backgrounds at Constellation Software, Valsoft and Roper.`),
     path: 'people.html', nav: 'people', body
   });
 }
@@ -847,7 +852,7 @@ function careers() {
     <div class="grid g4">
       <div class="card rise"><h3>Long horizons</h3><p>No fund cycle means no pressure to manufacture an outcome by a date. Decisions get made on merit rather than on timing.</p></div>
       <div class="card rise"><h3>Real ownership</h3><p>People here own a domain outright. The team is small enough that there is nowhere to hide and nothing between you and the work.</p></div>
-      <div class="card rise"><h3>Many businesses</h3><p>Fifteen companies across twelve industries. Few roles anywhere expose you to that much variety this quickly.</p></div>
+      <div class="card rise"><h3>Many businesses</h3><p>${Word(D.portfolio.length)} companies across ${word(verticals.length)} industries. Few roles anywhere expose you to that much variety this quickly.</p></div>
       <div class="card rise"><h3>No fund politics</h3><p>We are not raising, not reporting to limited partners, and not managing toward a vintage year.</p></div>
     </div>
   </div>
