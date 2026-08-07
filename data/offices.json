@@ -1,0 +1,37 @@
+[
+  {
+    "city": "Salt Lake City",
+    "region": "Utah, USA",
+    "tz": "America/Denver",
+    "isHQ": true,
+    "headcount": 11
+  },
+  {
+    "city": "Lisbon",
+    "region": "Portugal",
+    "tz": "Europe/Lisbon",
+    "isHQ": false,
+    "headcount": 4
+  },
+  {
+    "city": "New York",
+    "region": "New York, USA",
+    "tz": "America/New_York",
+    "isHQ": false,
+    "headcount": 3
+  },
+  {
+    "city": "Toronto",
+    "region": "Ontario, Canada",
+    "tz": "America/Toronto",
+    "isHQ": false,
+    "headcount": 1
+  },
+  {
+    "city": "São Paulo",
+    "region": "Brazil",
+    "tz": "America/Sao_Paulo",
+    "isHQ": false,
+    "headcount": 1
+  }
+]

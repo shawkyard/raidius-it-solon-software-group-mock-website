@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Alexander Spencer",
+    "title": "Founder & Chief Executive Officer",
+    "office": "Salt Lake City",
+    "focus": "Leadership",
+    "bio": "Previously a software engineer at Amazon working on Alexa, and a technology partner at SpringTide Capital. BS Electrical Engineering, Brigham Young University. MBA, Harvard Business School.",
+    "bookable": true
+  },
+  {
+    "name": "Rafael Mazzeo",
+    "title": "Operating Partner",
+    "office": "Salt Lake City",
+    "focus": "Operations",
+    "bio": "Previously Chief Operating Officer and Operating Partner at Valsoft and Aspire Software. Held CIO roles across Brazil, Belgium, France and India before moving into software operations.",
+    "bookable": true
+  },
+  {
+    "name": "Will Nouse",
+    "title": "Director of M&A",
+    "office": "New York",
+    "focus": "M&A",
+    "bio": "Previously corporate finance and M&A at Roper Technologies, and an investment banking analyst at MHT Partners.",
+    "bookable": true
+  },
+  {
+    "name": "Sam Clayton",
+    "title": "Investment Partner",
+    "office": "Salt Lake City",
+    "focus": "M&A",
+    "bio": "Spent seven years at CrowdStrike before moving to the buy side. University of Utah.",
+    "bookable": true
+  },
+  {
+    "name": "Aurelio Rospigliosi",
+    "title": "Vice President, Operations",
+    "office": "New York",
+    "focus": "Operations",
+    "bio": "Previously Credicorp Capital and APOYO Consultoría in Peru. MBA, Columbia Business School.",
+    "bookable": true
+  },
+  {
+    "name": "Jude Murray",
+    "title": "Corporate Development Manager",
+    "office": "Lisbon",
+    "focus": "M&A",
+    "bio": "Previously senior corporate development at Lumine Group, part of Constellation Software, based in Portugal.",
+    "bookable": true
+  },
+  {
+    "name": "Rodrigo Soto Larrain",
+    "title": "M&A Manager",
+    "office": "São Paulo",
+    "focus": "M&A",
+    "bio": "Previously Dura Software, Electrolux and Zurich Insurance across Latin America.",
+    "bookable": true
+  },
+  {
+    "name": "Bruna Silva",
+    "title": "Director of Talent",
+    "office": "Lisbon",
+    "focus": "People",
+    "bio": "Previously senior leadership and development advisor at Valsoft Corporation. MS Development and International Relations, Aalborg University.",
+    "bookable": true
+  },
+  {
+    "name": "Jaco Potgieter",
+    "title": "Head of Control and Accounting",
+    "office": "Lisbon",
+    "focus": "Finance",
+    "bio": "Nineteen years as Group Financial Controller at 20th Century Fox, then Director of Control and Accounting at Kantar. Joined Solen as Finance Integration Lead.",
+    "bookable": true
+  },
+  {
+    "name": "Inês Pequeno",
+    "title": "Lead Accountant",
+    "office": "Lisbon",
+    "focus": "Finance",
+    "bio": "Leads finance onboarding for newly acquired companies into the shared finance function. Previously Thales.",
+    "bookable": true
+  },
+  {
+    "name": "Brinton Wilkins",
+    "title": "General Counsel",
+    "office": "Salt Lake City",
+    "focus": "Legal",
+    "bio": "Previously a partner at Arcus Technology Law. JD, Brigham Young University.",
+    "bookable": true
+  },
+  {
+    "name": "Lizzie Rosegrant",
+    "title": "Marketing Director",
+    "office": "Salt Lake City",
+    "focus": "Marketing",
+    "bio": "Previously global campaigns at Turnitin, and marketing director roles inside the Solen portfolio at Track Star and Primate Technologies.",
+    "bookable": false
+  },
+  {
+    "name": "Michael Oliver",
+    "title": "Operating Vice President",
+    "office": "Salt Lake City",
+    "focus": "Operations",
+    "bio": "Concurrently Chief Operating Officer of Track Star. Previously a software engineer at Ancestry and an analyst at Goldman Sachs.",
+    "bookable": true
+  },
+  {
+    "name": "Daniel Mockaitis",
+    "title": "Operating Vice President",
+    "office": "New York",
+    "focus": "Operations",
+    "bio": "Embedded with ViaPeople. Previously a senior digital analyst at McKinsey & Company. UC Berkeley.",
+    "bookable": true
+  },
+  {
+    "name": "Noah Davis",
+    "title": "M&A Associate",
+    "office": "Salt Lake City",
+    "focus": "M&A",
+    "bio": "Previously Clozd. Brigham Young University.",
+    "bookable": false
+  },
+  {
+    "name": "Carter Chytraus",
+    "title": "M&A Associate",
+    "office": "Salt Lake City",
+    "focus": "M&A",
+    "bio": "Previously FP&A at SkyShare and a venture analyst at Sound Ventures. Fluent in Brazilian Portuguese.",
+    "bookable": false
+  },
+  {
+    "name": "Spencer McDougal",
+    "title": "Corporate Development Associate",
+    "office": "Salt Lake City",
+    "focus": "M&A",
+    "bio": "Previously a private equity analyst at Ridgeview Capital and Cumming Capital Management.",
+    "bookable": false
+  }
+]

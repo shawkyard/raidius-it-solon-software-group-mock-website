@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "solen-acquires-trackit",
+    "category": "Acquisitions",
+    "date": "2026-03-10",
+    "title": "Trackit joins Solen Software Group",
+    "summary": "Trackit, a provider of PTASP compliance and safety reporting software used at over 100 transit locations, has joined Solen.",
+    "body": [
+      "Solen Software Group has acquired Trackit, LLC, a provider of transit-specific software for safety plan compliance, recordkeeping and cross-department collaboration. The transaction closed in February 2026.",
+      "Trackit is used at over 100 transit locations. Its platform addresses the administrative requirements of the Public Transportation Agency Safety Plan rule, work that most agencies otherwise run on spreadsheets and shared drives.",
+      "Trackit will continue operating with autonomy, with Solen supporting the business through long-term ownership and optional shared services, allowing the team to remain focused on product development and customer support.",
+      "Mark Anderson continues as President."
+    ]
+  },
+  {
+    "slug": "solen-acquires-spokane-software",
+    "category": "Acquisitions",
+    "date": "2026-03-03",
+    "title": "Spokane Software Systems joins Solen Software Group",
+    "summary": "A provider of agricultural ERP and produce traceability software, founded in 1978, joins the portfolio.",
+    "body": [
+      "Solen Software Group has acquired Spokane Software Systems, Inc., a provider of agricultural ERP and produce traceability software for growers, packers and shippers. The transaction closed in December 2025.",
+      "Founded in 1978, Spokane Software develops mission-critical systems used by agricultural operators to manage core packing and shipping workflows, supporting operational continuity and regulatory compliance across the supply chain.",
+      "Chris Poston continues as Chief Executive Officer."
+    ]
+  },
+  {
+    "slug": "solen-acquires-thought-foundry",
+    "category": "Acquisitions",
+    "date": "2026-02-20",
+    "title": "Thought Foundry joins Solen Software Group",
+    "summary": "Solen's entry into media and entertainment, through a platform managing digital content entitlements for major studios.",
+    "body": [
+      "Solen Software Group has acquired Thought Foundry, Inc., a provider of enterprise SaaS for the media and entertainment industry.",
+      "The acquisition marks Solen’s entry into the media and entertainment vertical and extends its focus on high-retention businesses with mission-critical workflows and recurring revenue.",
+      "Thought Foundry will continue under its own brand, with planned investment to accelerate product development and expand partnerships. Timur Insepov continues as Chief Executive Officer."
+    ]
+  },
+  {
+    "slug": "solen-acquires-cairn-applications",
+    "category": "Acquisitions",
+    "date": "2026-01-27",
+    "title": "Cairn Applications joins Solen Software Group",
+    "summary": "Box Tracker and Route Tracker, serving the waste hauling industry, join the portfolio.",
+    "body": [
+      "Solen Software Group has acquired Cairn Applications, Inc., a provider of cloud software purpose-built for the waste hauling industry. The transaction closed in December 2025.",
+      "Founded in 2008, Cairn builds Box Tracker and Route Tracker, used by waste operators to manage container inventory, routing and dispatch.",
+      "Cairn will continue operating with autonomy, with Solen supporting the business through long-term ownership and optional shared services."
+    ]
+  },
+  {
+    "slug": "permanent-capital-versus-private-equity",
+    "category": "Perspectives",
+    "date": "2026-02-04",
+    "title": "Permanent capital is a structure, not a promise",
+    "summary": "Every acquirer says they are long-term. The difference is whether anything forces them to sell.",
+    "body": [
+      "Every acquirer tells founders they are in it for the long term. Most of them mean it when they say it. The question worth asking is not whether they intend to hold, but whether anything in their structure would eventually require them to sell.",
+      "A traditional fund has a defined life. Capital is raised, deployed, and returned on a schedule that was agreed with limited partners before your company was ever identified as a target. The people you meet may genuinely intend to be good stewards. The fund still has a clock, and the clock does not care.",
+      "Permanent capital removes the clock. There is no fund life, no return schedule, and no structural moment at which a company must be sold to satisfy an obligation to someone else.",
+      "This matters most in the years after a transaction, when the founder is no longer in the room. A structure that does not require a sale produces different decisions than one that does — about how much to invest in a product, how long to give a strategy, and whether to optimise a business for operation or for resale.",
+      "Ask any acquirer what would have to happen for them to sell your company. The answer tells you more than the pitch does."
+    ]
+  },
+  {
+    "slug": "why-decentralization-works",
+    "category": "Perspectives",
+    "date": "2026-01-14",
+    "title": "What we do not change after an acquisition",
+    "summary": "The case for leaving product, pricing and customer relationships exactly where they are.",
+    "body": [
+      "The instinct after acquiring a company is to improve it. Standardise the product, consolidate the brand, centralise the sales team, migrate everyone onto one system. It feels like value creation, and occasionally it is.",
+      "More often it destroys the thing that was bought. A vertical software business is valuable precisely because it has spent decades accumulating a specific understanding of one industry. That understanding lives in people who have talked to those customers for twenty years, and it does not survive being reorganised into a shared services function.",
+      "So we leave it alone. Product roadmap, pricing, customer relationships and day-to-day decisions stay with the team that already knows the answer.",
+      "What we do take is the work that is genuinely identical across every business we own — financial reporting, HR infrastructure, legal, and increasingly AI capability. None of that is differentiating. All of it consumes the attention of people whose attention should be somewhere else.",
+      "Decentralise what is specific. Centralise what is generic. The difficulty is being honest about which is which."
+    ]
+  },
+  {
+    "slug": "questions-to-ask-any-acquirer",
+    "category": "Perspectives",
+    "date": "2025-12-09",
+    "title": "Nine questions to ask any acquirer, including us",
+    "summary": "A founder sells once. The buyer does it monthly. These questions close some of that gap.",
+    "body": [
+      "The asymmetry in an acquisition conversation is severe. You have done this once. The person across the table does it every month, with a team and a process built for it.",
+      "These are the questions we think close some of that gap. We would rather you asked them of us than did not.",
+      "What would have to happen for you to sell my company? · How many companies have you sold, and why? · Can I speak to a founder who sold to you three or more years ago, without you on the call? · What changes in the first ninety days? · Who will my team report to? · What happens to my leadership team’s authority? · How is the purchase price structured, and what is contingent? · What does your capital require of you? · What is the worst experience a founder has had with you, and what did you learn?",
+      "If an acquirer cannot answer the last one, that is itself an answer."
+    ]
+  }
+]

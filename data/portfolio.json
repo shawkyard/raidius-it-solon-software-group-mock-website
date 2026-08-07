@@ -1,0 +1,420 @@
+[
+  {
+    "slug": "track-star",
+    "name": "Track Star",
+    "vertical": "Fleet & Government",
+    "tagline": "Fleet GPS, telematics and enterprise asset management.",
+    "description": "Track Star builds GPS tracking, telematics and asset management systems for organisations that cannot afford to lose a vehicle, a tool or a chain of custody. Its platform covers location, maintenance, safety and compliance in a single operational view.",
+    "hqCity": "Calabash",
+    "hqRegion": "North Carolina",
+    "hqCountry": "USA",
+    "founded": 2000,
+    "acquired": 2022,
+    "leaderName": "Mike Hughes",
+    "leaderTitle": "Founder & Chief Executive Officer",
+    "customerType": "Police departments, government agencies and municipal fleet operators.",
+    "products": [
+      "GPS Tracking",
+      "Telematics",
+      "Asset Management",
+      "Compliance Reporting"
+    ],
+    "accentStat": "Revenue grew roughly 40% following the partnership",
+    "expertise": [
+      "CJIS",
+      "Government procurement",
+      "IoT hardware",
+      "Fleet operations"
+    ],
+    "quote": {
+      "text": "Alexander and the Solen team are interested in long term ownership of Track Star and their other properties, to grow them and hold on to them, not bundle them up with something else and send them over for an instant profit.",
+      "author": "Mike Hughes",
+      "role": "Founder & CEO"
+    }
+  },
+  {
+    "slug": "viapeople",
+    "name": "ViaPeople",
+    "vertical": "Human Capital",
+    "tagline": "Talent and performance management for investment firms.",
+    "description": "ViaPeople provides performance management, 360-degree feedback and talent development software built for the way investment firms actually evaluate people. It is used by private equity firms and investment banks to run structured review cycles at portfolio scale.",
+    "hqCity": "Plainsboro",
+    "hqRegion": "New Jersey",
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": 2023,
+    "leaderName": null,
+    "leaderTitle": null,
+    "customerType": "Private equity firms, investment banks and their portfolio companies.",
+    "products": [
+      "Performance Management",
+      "360 Feedback",
+      "Talent Development"
+    ],
+    "accentStat": "SOC 2 Type I certified",
+    "expertise": [
+      "SOC 2",
+      "EU–U.S. Data Privacy Framework",
+      "Security questionnaires"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "spiralinks",
+    "name": "SpiraLinks",
+    "vertical": "Human Capital",
+    "tagline": "Global compensation planning — salary, bonus and equity.",
+    "description": "SpiraLinks builds FocalReview, a compensation planning platform that handles salary, bonus and equity administration across currencies, countries and pay structures. It has been continuously developed since 1994.",
+    "hqCity": "Campbell",
+    "hqRegion": "California",
+    "hqCountry": "USA",
+    "secondaryOffice": "Wyboston, England",
+    "founded": 1994,
+    "acquired": null,
+    "leaderName": "Julie Southern",
+    "leaderTitle": "Founder & Chief Executive Officer",
+    "customerType": "Global enterprises running multi-country compensation cycles.",
+    "products": [
+      "FocalReview",
+      "Compensation Planning",
+      "Equity Administration"
+    ],
+    "accentStat": "Three decades of continuous operation",
+    "expertise": [
+      "Multi-currency payroll",
+      "GDPR",
+      "UK & India operations",
+      "DMARC enforcement"
+    ],
+    "quote": {
+      "text": "It was not a harvest of resources but a strategic direction to grow the business.",
+      "author": "Julie Southern",
+      "role": "Founder & CEO"
+    }
+  },
+  {
+    "slug": "primate-technologies",
+    "name": "Primate Technologies",
+    "vertical": "Asset Intelligence",
+    "tagline": "Enterprise asset management for vehicle, equipment and tool security.",
+    "description": "Primate Technologies secures and tracks high-value physical assets — vehicles, equipment and tools — for organisations where loss and misuse carry real operational cost.",
+    "hqCity": "Melbourne",
+    "hqRegion": "Florida",
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": 2024,
+    "leaderName": "Rita Patterson",
+    "leaderTitle": "Co-Founder",
+    "customerType": "Utilities, contractors and fleet operators.",
+    "products": [
+      "Asset Security",
+      "Equipment Tracking",
+      "Tool Management"
+    ],
+    "accentStat": null,
+    "expertise": [
+      "Utilities",
+      "Field operations"
+    ],
+    "quote": {
+      "text": "Solen's investments are providing a great future for Primate's customers and employees.",
+      "author": "Rita Patterson",
+      "role": "Co-Founder"
+    }
+  },
+  {
+    "slug": "nextalk",
+    "name": "NexTalk",
+    "vertical": "Accessibility",
+    "tagline": "ADA-compliant real-time text communication.",
+    "description": "NexTalk provides real-time text communication infrastructure that lets deaf and hard-of-hearing users reach contact centres and internal help desks directly, meeting accessibility obligations that most communication platforms do not address.",
+    "hqCity": "Murray",
+    "hqRegion": "Utah",
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": 2024,
+    "leaderName": "Travis Gollaher",
+    "leaderTitle": "General Manager",
+    "customerType": "Enterprises and public bodies with ADA accessibility obligations.",
+    "products": [
+      "Real-Time Text",
+      "Accessible Contact Centre"
+    ],
+    "accentStat": null,
+    "expertise": [
+      "ADA compliance",
+      "FCC regulation",
+      "Accessibility"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "fmsi",
+    "name": "FMSI",
+    "vertical": "Financial Services",
+    "tagline": "Branch performance and workforce management for financial institutions.",
+    "description": "FMSI measures and optimises branch performance and staffing for banks and credit unions — matching labour to transaction demand across networks of physical locations. The business relaunched as an independent company in 2025 after a divestiture from a larger enterprise parent.",
+    "hqCity": "Cottonwood Heights",
+    "hqRegion": "Utah",
+    "hqCountry": "USA",
+    "founded": 1990,
+    "acquired": 2025,
+    "leaderName": "Jacob Reeves",
+    "leaderTitle": "General Manager",
+    "customerType": "Banks and credit unions operating branch networks.",
+    "products": [
+      "Branch Performance Analytics",
+      "Workforce Management",
+      "Lobby Tracking"
+    ],
+    "accentStat": "Relaunched as an independent company in 2025",
+    "expertise": [
+      "GLBA",
+      "FFIEC examination",
+      "Credit union operations"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "champ-software",
+    "name": "Champ Software",
+    "vertical": "Public Health",
+    "tagline": "Nightingale Notes — electronic health records for public health.",
+    "description": "Champ Software builds Nightingale Notes, an electronic health record designed specifically for public health agencies rather than adapted from a clinical product. It has served community health, home care and aging services since 1985.",
+    "hqCity": "Mankato",
+    "hqRegion": "Minnesota",
+    "hqCountry": "USA",
+    "founded": 1985,
+    "acquired": null,
+    "leaderName": "Scott Dunnewind",
+    "leaderTitle": "Chief Executive Officer",
+    "customerType": "Public health agencies, home care providers and aging and disability resource centres.",
+    "products": [
+      "Nightingale Notes EHR"
+    ],
+    "accentStat": "Serving public health since 1985",
+    "expertise": [
+      "HIPAA",
+      "HITECH",
+      "PHI handling",
+      "Public health reporting"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "autotime",
+    "name": "AutoTime",
+    "vertical": "Aerospace & Defense",
+    "tagline": "DCAA-compliant labour tracking and time capture.",
+    "description": "AutoTime captures labour and time data to the standard defence contractors are audited against. For companies billing the federal government, the difference between compliant and non-compliant time capture is the difference between getting paid and not.",
+    "hqCity": "Plainsboro",
+    "hqRegion": "New Jersey",
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": null,
+    "leaderName": null,
+    "leaderTitle": null,
+    "customerType": "Aerospace and defence contractors billing federal programmes.",
+    "products": [
+      "Labour Tracking",
+      "DCAA Time Capture",
+      "Shop Floor Data Collection"
+    ],
+    "accentStat": null,
+    "expertise": [
+      "DCAA",
+      "DFARS",
+      "NIST 800-171",
+      "Defense contracting"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "thingtech",
+    "name": "ThingTech",
+    "vertical": "Asset Intelligence",
+    "tagline": "Connected asset and field operations management.",
+    "description": "ThingTech connects physical assets to the systems that manage them, giving field-heavy organisations a live operational picture of what they own and where it is working.",
+    "hqCity": null,
+    "hqRegion": null,
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": null,
+    "leaderName": null,
+    "leaderTitle": null,
+    "customerType": "Asset-intensive and field service operations.",
+    "products": [],
+    "accentStat": null,
+    "expertise": [
+      "Field service",
+      "Asset telemetry"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "dash",
+    "name": "Dash",
+    "vertical": "Supply Chain",
+    "tagline": "Operations and workflow automation.",
+    "description": "Dash automates operational workflow for distribution and supply chain businesses, replacing manual document handling with structured process.",
+    "hqCity": "Germantown",
+    "hqRegion": "Wisconsin",
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": null,
+    "leaderName": "Jim Van Hecke",
+    "leaderTitle": "Founder",
+    "customerType": "Distribution and supply chain operators.",
+    "products": [],
+    "accentStat": null,
+    "expertise": [
+      "Workflow automation",
+      "Distribution"
+    ],
+    "quote": {
+      "text": "It has proven to be a win for those of us who originally founded the company.",
+      "author": "Jim Van Hecke",
+      "role": "Founder"
+    }
+  },
+  {
+    "slug": "smrtr",
+    "name": "SMRTR",
+    "vertical": "Food & Beverage",
+    "tagline": "Compliance and process automation for the food and beverage supply chain.",
+    "description": "SMRTR automates compliance documentation and business process across food and beverage distribution, where traceability requirements and thin margins make manual paperwork expensive. It also runs an ERP implementation practice spanning the major mid-market platforms.",
+    "hqCity": null,
+    "hqRegion": null,
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": null,
+    "leaderName": "Susanne Moore",
+    "leaderTitle": "Founder",
+    "customerType": "Food and beverage distributors, manufacturers and wholesalers.",
+    "products": [
+      "Compliance Automation",
+      "Document Management",
+      "ERP Implementation"
+    ],
+    "accentStat": "Available on the SYSPRO Marketplace",
+    "expertise": [
+      "FSMA 204",
+      "ERP integration",
+      "SYSPRO",
+      "Boomi & MuleSoft"
+    ],
+    "quote": {
+      "text": "Partnering with Solen came down to alignment on core values.",
+      "author": "Susanne Moore",
+      "role": "Founder"
+    }
+  },
+  {
+    "slug": "cairn-applications",
+    "name": "Cairn Applications",
+    "vertical": "Waste Management",
+    "tagline": "Box Tracker and Route Tracker — route and container operations for waste haulers.",
+    "description": "Cairn Applications builds Box Tracker and Route Tracker, cloud software that manages container inventory, routing and dispatch for waste hauling operators. Founded in 2008 and run as a family business until joining Solen.",
+    "hqCity": null,
+    "hqRegion": "New England",
+    "hqCountry": "USA",
+    "founded": 2008,
+    "acquired": 2025,
+    "leaderName": "Jim and Angela Moser",
+    "leaderTitle": "Founders",
+    "customerType": "Waste hauling and roll-off container operators.",
+    "products": [
+      "Box Tracker",
+      "Route Tracker"
+    ],
+    "accentStat": "Closed December 2025",
+    "expertise": [
+      "Route optimisation",
+      "Waste logistics"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "spokane-software",
+    "name": "Spokane Software Systems",
+    "vertical": "Agriculture",
+    "tagline": "Agricultural ERP and produce traceability.",
+    "description": "Spokane Software builds the operational backbone for produce businesses — packing, shipping and traceability workflows that growers, packers and shippers depend on to move perishable goods and satisfy regulators. Founded in 1978.",
+    "hqCity": null,
+    "hqRegion": null,
+    "hqCountry": "USA",
+    "founded": 1978,
+    "acquired": 2025,
+    "leaderName": "Chris Poston",
+    "leaderTitle": "Chief Executive Officer",
+    "customerType": "Growers, packers and shippers across the produce supply chain.",
+    "products": [
+      "Spokane System",
+      "Produce Traceability",
+      "Packing & Shipping ERP"
+    ],
+    "accentStat": "Serving the produce industry since 1978",
+    "expertise": [
+      "FSMA 204 traceability",
+      "Agricultural ERP",
+      "Cold chain"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "thought-foundry",
+    "name": "Thought Foundry",
+    "vertical": "Media & Entertainment",
+    "tagline": "MDEO — digital content entitlement management.",
+    "description": "Thought Foundry builds MDEO, the platform that manages digital content entitlements for major film studios. Who can watch what, where, on which platform, and for how long — resolved at the scale and reliability the studio business requires.",
+    "hqCity": "Los Angeles",
+    "hqRegion": "California",
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": 2026,
+    "leaderName": "Timur Insepov",
+    "leaderTitle": "Chief Executive Officer",
+    "customerType": "Major film studios and content distributors.",
+    "products": [
+      "MDEO"
+    ],
+    "accentStat": "Solen's entry into media and entertainment",
+    "expertise": [
+      "Studio security review",
+      "Content entitlements",
+      "Media supply chain"
+    ],
+    "quote": null
+  },
+  {
+    "slug": "trackit",
+    "name": "Trackit",
+    "vertical": "Public Transit",
+    "tagline": "PTASP compliance, safety reporting and cross-department collaboration for transit.",
+    "description": "Trackit gives transit agencies a single place to run safety plan compliance, incident recordkeeping and cross-department collaboration — the administrative machinery that federal transit regulation requires and that most agencies run on spreadsheets.",
+    "hqCity": null,
+    "hqRegion": null,
+    "hqCountry": "USA",
+    "founded": null,
+    "acquired": 2026,
+    "leaderName": "Mark Anderson",
+    "leaderTitle": "President",
+    "customerType": "Public transit agencies and authorities.",
+    "products": [
+      "PTASP Compliance",
+      "Safety Reporting",
+      "Incident Management"
+    ],
+    "accentStat": "In use at over 100 transit locations",
+    "expertise": [
+      "PTASP",
+      "FTA regulation",
+      "Transit procurement"
+    ],
+    "quote": {
+      "text": "Customers can expect the same high level of support with all the same people involved.",
+      "author": "Mark Anderson",
+      "role": "President"
+    }
+  }
+]

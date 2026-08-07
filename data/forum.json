@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "topic": "Security & Compliance",
+    "title": "Anyone been through SOC 2 Type I recently? Studio customer is asking.",
+    "author": "Timur Insepov",
+    "company": "Thought Foundry",
+    "replies": 7,
+    "lastActivity": "2 hours ago",
+    "solenBadge": false,
+    "excerpt": "A studio customer has come back with a vendor security questionnaire that assumes we hold SOC 2. We do not. Before I go and price an audit, has anyone here done this recently and what did it actually cost in time and money?"
+  },
+  {
+    "id": 2,
+    "topic": "Security & Compliance",
+    "title": "Re: SOC 2 — we did Type I in about four months",
+    "author": "ViaPeople leadership",
+    "company": "ViaPeople",
+    "replies": 0,
+    "lastActivity": "1 hour ago",
+    "solenBadge": false,
+    "excerpt": "We used a compliance automation platform and a third-party auditor. Type I first, then Type II on a rolling basis. Happy to share the whole runbook and our auditor contact — no reason for you to start from a blank page."
+  },
+  {
+    "id": 3,
+    "topic": "Go-to-Market",
+    "title": "Government procurement cycles — how do you forecast against them?",
+    "author": "Mark Anderson",
+    "company": "Trackit",
+    "replies": 5,
+    "lastActivity": "5 hours ago",
+    "solenBadge": false,
+    "excerpt": "Transit agency budgets move on an annual federal cycle and our pipeline forecasting keeps assuming commercial timelines. Track Star sells to police and municipal fleets, so I suspect this is a solved problem somewhere in the group."
+  },
+  {
+    "id": 4,
+    "topic": "Go-to-Market",
+    "title": "Re: Government procurement — we forecast on fiscal year, not calendar",
+    "author": "Mike Hughes",
+    "company": "Track Star",
+    "replies": 0,
+    "lastActivity": "3 hours ago",
+    "solenBadge": false,
+    "excerpt": "Two things that helped us: forecast against the customer fiscal year rather than ours, and get on the cooperative purchasing schedules early. Cuts months off the cycle. Send me a note and I will walk you through how we structured it."
+  },
+  {
+    "id": 5,
+    "topic": "M&A Integration",
+    "title": "Finance onboarding — what to prepare before week two",
+    "author": "Inês Pequeno",
+    "company": "Solen",
+    "replies": 12,
+    "lastActivity": "1 day ago",
+    "solenBadge": true,
+    "excerpt": "For companies joining us this quarter: here is the short list of what makes finance onboarding fast. Chart of accounts, last three years of statements, your revenue recognition policy, and a named contact who can answer questions without escalating."
+  },
+  {
+    "id": 6,
+    "topic": "Hiring",
+    "title": "Hiring engineers in Portugal — what we learned",
+    "author": "Bruna Silva",
+    "company": "Solen",
+    "replies": 4,
+    "lastActivity": "2 days ago",
+    "solenBadge": true,
+    "excerpt": "Several companies have asked about extending engineering into Lisbon. We have now hired there repeatedly and there are a few things worth knowing about contracts, notice periods and the local market rate before you start."
+  },
+  {
+    "id": 7,
+    "topic": "Product",
+    "title": "How much AI is your roadmap actually promising customers?",
+    "author": "Scott Dunnewind",
+    "company": "Champ Software",
+    "replies": 9,
+    "lastActivity": "3 days ago",
+    "solenBadge": false,
+    "excerpt": "Public health agencies are starting to ask what our AI story is. Given we handle PHI, I am cautious about what we commit to. Curious where everyone else has landed on the line between useful and reckless."
+  },
+  {
+    "id": 8,
+    "topic": "Pricing",
+    "title": "Annual uplift — what are people actually getting away with?",
+    "author": "Julie Southern",
+    "company": "SpiraLinks",
+    "replies": 11,
+    "lastActivity": "4 days ago",
+    "solenBadge": false,
+    "excerpt": "We have historically been shy about annual increases and I suspect we have left a lot on the table across three decades. Interested in what the rest of the group is doing, particularly in long-tenured accounts."
+  }
+]
