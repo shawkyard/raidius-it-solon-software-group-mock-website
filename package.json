@@ -1,0 +1,13 @@
+{
+  "name": "solen-software-group-concept",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Concept build: Solen Software Group website + Portfolio Hub. Static site, no dependencies.",
+  "scripts": {
+    "build": "node build/generate.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
