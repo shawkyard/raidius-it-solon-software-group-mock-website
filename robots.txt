@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /hub.html
 
-Sitemap: https://shawkyard.github.io/raidius-it-solon-software-group-mock-website/sitemap.xml
+Sitemap: https://solen-concept.pages.dev/sitemap.xml
