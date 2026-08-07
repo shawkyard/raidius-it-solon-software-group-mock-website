@@ -17,7 +17,13 @@ const verticals = [...new Set(D.portfolio.map(c => c.vertical))].sort()
 const loc = c => [c.hqCity, c.hqRegion, c.hqCountry].filter(Boolean).join(', ');
 const shortLoc = c => c.hqCity ? `${c.hqCity}, ${c.hqRegion || c.hqCountry}` : (c.hqCountry || '—');
 
-const REPO_BASE = '/raidius-it-solon-software-group-mock-website/';
+// Deployment base. Cloudflare Pages serves from the root; GitHub Pages serves from
+// /<repo>/. Override with env vars when deploying elsewhere:
+//   SITE_BASE=/raidius-it-solon-software-group-mock-website/ \
+//   SITE_ORIGIN=https://shawkyard.github.io node build/generate.js
+const SITE_BASE = process.env.SITE_BASE || '/';
+const SITE_ORIGIN = (process.env.SITE_ORIGIN || 'https://solen-concept.pages.dev').replace(/\/$/, '');
+const REPO_BASE = SITE_BASE;
 
 const WORDS = ['zero','one','two','three','four','five','six','seven','eight','nine','ten',
   'eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
@@ -48,7 +54,7 @@ function fitDesc(parts) {
 function layout(o) {
   const depth = o.depth || 0;
   const R = depth ? '../'.repeat(depth) : '';
-  const canonical = 'https://shawkyard.github.io/raidius-it-solon-software-group-mock-website/' + (o.path || '');
+  const canonical = SITE_ORIGIN + SITE_BASE + (o.path || '');
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1040,7 +1046,7 @@ fs.mkdirSync(path.join(ROOT, 'data'), { recursive: true });
 });
 
 /* sitemap + robots */
-const BASE = 'https://shawkyard.github.io/raidius-it-solon-software-group-mock-website/';
+const BASE = SITE_ORIGIN + SITE_BASE;
 const urls = written.filter(f => f !== '404.html').map(f => f === 'index.html' ? '' : f);
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
@@ -1048,6 +1054,18 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
 fs.writeFileSync(path.join(ROOT, 'robots.txt'),
   `User-agent: *\nAllow: /\nDisallow: /hub.html\n\nSitemap: ${BASE}sitemap.xml\n`);
 fs.writeFileSync(path.join(ROOT, '.nojekyll'), '');
+
+/* Cloudflare Pages security headers. Deliberate: the brief this build accompanies
+   flags missing CSP across the real portfolio, so shipping without one would be odd.
+   'unsafe-inline' is required for the inlined Hub dataset and JSON-LD blocks. */
+fs.writeFileSync(path.join(ROOT, '_headers'), `/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'
+`);
 
 console.log(`Generated ${written.length} pages + ${urls.length} sitemap entries`);
 console.log(written.join('\n'));
