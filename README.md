@@ -47,10 +47,45 @@ Node 18+ is the only requirement, and only for regeneration.
 | `/insights.html` | Public | Index |
 | `/insights/{slug}.html` | Public | 7 generated articles |
 | `/hub.html` | **Authenticated** | Portfolio Hub SPA — `noindex`, excluded from sitemap |
+| `/support.html` | **Authenticated** | Bonneville IT support portal — `noindex`, `Disallow`, 8 languages |
 | `/404.html` | — | |
 
 Hub routes are hash-based: `#/dashboard`, `#/directory`, `#/companies`, `#/playbooks`,
 `#/forum`, `#/services`, `#/onboarding`, `#/slack`.
+
+Support portal routes are hash-based: `#/dash`, `#/new`, `#/mine`, `#/queue`, `#/help`,
+`#/t/{ticketId}`.
+
+## The support portal
+
+`support.html` is a **Bonneville IT** surface, not a Solen one, so it deliberately carries
+Bonneville's own brand — near-black canvas, neon electric blue `#0066FF`, orange `#FF6B00`,
+and the real logo taken from the live Bonneville IT site. Two roles:
+
+- **Employee** — report an issue, get an instant AI first response, track tickets against a
+  live SLA countdown.
+- **Bonneville IT (Jeff)** — the technician queue, at-risk counter, and notifications.
+
+**SLA targets**, which the countdowns are measured against:
+
+| Priority | First response | Resolution target |
+|---|---|---|
+| P1 Critical | **15 minutes** | 4 hours |
+| P2 High | **30 minutes** | 8 hours |
+| P3 Normal | **1 hour** | 24 hours |
+| P4 Low | **4 hours** | 72 hours |
+
+**Priority is not left to the reporter alone.** A rules engine reads the subject and body and
+sets a floor: anything matching phishing, fraud, ransomware, breach or a multi-person outage
+is forced to P1 no matter what the reporter selected. If the reporter rates something *more*
+urgent than the rules do, their rating wins. Rules can escalate; they never quietly de-escalate
+a security report.
+
+**Languages.** Eight packs — English, Português (PT), Português (BR), Español, Français,
+Italiano, Deutsch, 한국어 — chosen to cover the countries the Solen group actually operates in.
+Detection order is saved preference, then exact `navigator.language` (so `pt-BR` gets Brazilian
+Portuguese, not European), then base language, then English. A missing key falls back to English
+rather than rendering blank.
 
 ## Data model
 
@@ -65,6 +100,7 @@ entry, its filter counts, its sitemap row and its Hub directory record with no o
 | `offices` | 5 | Footer clocks, people page, Hub header, overlap band |
 | `forum` | 8 | Hub leadership forum |
 | `checklist` | 99 across 5 phases | Approach page grid, Hub playbooks, Hub onboarding |
+| `logo.js` | 1 data URI | Support portal — real Bonneville IT mark, base64 so the repo stays text-only |
 | `insights` | 7 | Insights index and detail pages |
 
 `data/*.json` mirrors are emitted for external consumption. The Hub reads its data inlined
@@ -175,6 +211,9 @@ conflict between sources and some are inferred. Treat nothing here as authoritat
 | The 99 checklist items | `build/data.js` → `checklist` | **Invented.** Only the existence of a 99-point checklist is sourced |
 | Slack channel list and member counts | `assets/js/hub.js` → `CHANNELS` | **Fabricated** |
 | Notifications | `assets/js/hub.js` → `notifications()` | **Fabricated** |
+| 4 seeded support tickets | `assets/js/support.js` → `seed()` | **Fabricated** |
+| Support KPI figures (6m response, 98% satisfaction) | `assets/js/support.js` → `viewDash()` | **Fabricated** — replace with measured data |
+| AI triage rules and remediation steps | `assets/js/support.js` → `RULES` | Written for this build; technically sound but review before use |
 | Shared-service leads and turnaround times | `assets/js/hub.js` → `SERVICES` | Leads are real people; turnaround times invented |
 | Open roles | `build/generate.js` → `careers()` | **Illustrative** |
 | Homepage founder quote | `build/generate.js` → `home()` | Real quote, attributed generically as sourced |

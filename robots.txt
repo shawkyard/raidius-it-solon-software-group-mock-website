@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /hub.html
+Disallow: /support.html
 
 Sitemap: https://solen-concept.pages.dev/sitemap.xml
