@@ -154,3 +154,71 @@ Named here so nothing is mistaken for working:
 | Service requests | MOCK | Ticketing system endpoint |
 | Public forms | LIVE + local fallback | `FORM_ENDPOINT` |
 | Checklist persistence | LIVE, local only | Backend keyed by company |
+
+---
+
+## Support portal (`support.html`)
+
+### AI first response — LIVE, rules-based
+`assets/js/support.js` → `RULES`, `triage()`
+
+Genuinely working, and deliberately **not** a hosted language model. It is a keyword rules
+engine that runs locally: instant, works offline, costs nothing, and cannot invent a remedy it
+has no basis for. Nine rule sets cover security, multi-person outage, access/password, email,
+connectivity, performance, printing, voice and applications, with a generic fallback.
+
+It sets a **priority floor** — security and outage reports are forced to P1 regardless of what
+the reporter chose — while still honouring a reporter who rates something more urgent than the
+rules do.
+
+To swap in a hosted model: replace the body of `triage()` with a call to your provider and keep
+the same return shape (`{ pri, cat, read, steps }`). Keep the rules engine as the fallback for
+when the API is slow or unavailable — a helpdesk that stops triaging when an API times out is
+worse than one that never called an API. The UI already labels output as an automated first
+response, so no copy changes are needed.
+
+### SLA countdown — LIVE
+Response deadlines are computed from the ticket's creation timestamp against the P1–P4 targets,
+and the countdown re-renders every ten seconds. Breach state is real, not decorative. The
+refresh deliberately skips re-rendering while a field has focus or a reply is part-written.
+
+### Localisation — LIVE
+`assets/js/i18n.js`. Eight complete language packs with automatic detection from
+`navigator.language`, exact-tag matching before base-language matching, a manual switcher, and
+English fallback for any missing key.
+
+### Authentication — MOCK
+Two roles, no credential check, persisted in `localStorage`. Replace with the same OIDC flow
+described above for the Hub. Note the portal currently does **not** enforce roles at the route
+level the way the Hub does — an employee cannot reach the queue through the UI, and the router
+redirects them, but this needs real server-side authorisation before it handles real tickets.
+
+### Ticket storage — MOCK
+`localStorage` only. Nothing is transmitted. Tickets, replies and read state are per-browser
+and will not appear on another device. Wire to a real ticketing backend, or to Jeff's PSA
+(Autotask, ConnectWise, HaloPSA, Syncro) via its API.
+
+### Notifying Jeff — NOT BUILT
+The portal shows an in-app notification badge and count, which is real UI over local data. It
+does **not** send anything. For a real deployment Jeff needs at minimum:
+
+- an email or SMS on every P1 at creation, not on a polling interval;
+- a push or Slack message on P1/P2;
+- an escalation if a P1 is unacknowledged at 10 minutes, i.e. before the 15-minute target is
+  missed rather than after.
+
+That last one is the difference between a tight SLA and a stated SLA. The `SLA` object in
+`support.js` is the single place those thresholds are defined.
+
+### Summary
+
+| Feature | Status | Needed to go live |
+|---|---|---|
+| AI first response | **LIVE** (rules) | Optional: hosted model, keeping rules as fallback |
+| Priority floor on security/outage | **LIVE** | Nothing |
+| SLA countdown and breach state | **LIVE** | Nothing |
+| Eight-language localisation | **LIVE** | Native review of each pack |
+| Real logo and branding | **LIVE** | Nothing |
+| Authentication | MOCK | OIDC + server-side authorisation |
+| Ticket storage | MOCK | Ticketing backend or PSA API |
+| Notifying Jeff | Not built | Email/SMS/Slack on P1 + unacknowledged escalation |
