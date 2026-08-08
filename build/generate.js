@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 const D = require('./data.js');
+const { logoDataUri } = require('./logo.js');
 
 const ROOT = path.join(__dirname, '..');
 const esc = s => String(s == null ? '' : s)
@@ -110,6 +111,7 @@ function nav(R, active) {
       <a href="${R}insights.html"${on('insights')}>Insights</a>
     </div>
     <div class="nav-right">
+      <a class="btn btn-ghost btn-sm" href="${R}support.html">IT Support</a>
       <a class="btn btn-ghost btn-sm" href="${R}hub.html">Portfolio Hub</a>
       <a class="btn btn-sun btn-sm" href="${R}founders.html#talk">Start a conversation</a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu">
@@ -142,6 +144,7 @@ function nav(R, active) {
   <a href="${R}careers.html">Careers</a>
   <a href="${R}insights.html">Insights</a>
   <a href="${R}hub.html">Portfolio Hub</a>
+  <a href="${R}support.html">IT Support</a>
   <a class="btn btn-sun" href="${R}founders.html#talk">Start a conversation</a>
 </div>`;
 }
@@ -172,6 +175,7 @@ function footer(R) {
           <li><a href="${R}careers.html">Careers</a></li>
           <li><a href="${R}insights.html">Insights</a></li>
           <li><a href="${R}hub.html">Portfolio Hub</a></li>
+          <li><a href="${R}support.html">IT Support</a></li>
         </ul>
       </div>
       <div>
@@ -974,6 +978,32 @@ function insightDetail(i) {
   });
 }
 
+/* ----------------------------------------------------------------- support */
+function support() {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support Portal | Bonneville IT</title>
+<meta name="description" content="Bonneville IT support portal for the Solen group. Report an issue, get an instant first response, and track it against a tight SLA.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#070A12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/support.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23070A12'/><circle cx='16' cy='16' r='6' fill='%230066FF'/><circle cx='16' cy='16' r='10' fill='none' stroke='%2322D3EE' stroke-width='1.5'/></svg>">
+</head>
+<body class="sup">
+<div id="sup"></div>
+<script>window.BON_LOGO = '${logoDataUri}';</script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/support.js"></script>
+</body>
+</html>`;
+}
+
 /* --------------------------------------------------------------------- hub */
 function hub() {
   const inline = {
@@ -1038,6 +1068,7 @@ written.push(write('insights.html', insightsIndex()));
 D.insights.forEach(i => written.push(write(`insights/${i.slug}.html`, insightDetail(i))));
 written.push(write('404.html', notFound()));
 fs.writeFileSync(path.join(ROOT, 'hub.html'), hub());
+fs.writeFileSync(path.join(ROOT, 'support.html'), support());
 
 /* JSON data mirrors, consumed by the Hub at runtime */
 fs.mkdirSync(path.join(ROOT, 'data'), { recursive: true });
@@ -1052,7 +1083,7 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   urls.map(u => `  <url><loc>${BASE}${u}</loc></url>`).join('\n') + `\n</urlset>\n`);
 fs.writeFileSync(path.join(ROOT, 'robots.txt'),
-  `User-agent: *\nAllow: /\nDisallow: /hub.html\n\nSitemap: ${BASE}sitemap.xml\n`);
+  `User-agent: *\nAllow: /\nDisallow: /hub.html\nDisallow: /support.html\n\nSitemap: ${BASE}sitemap.xml\n`);
 fs.writeFileSync(path.join(ROOT, '.nojekyll'), '');
 
 /* Cloudflare Pages security headers. Deliberate: the brief this build accompanies
